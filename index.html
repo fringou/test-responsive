@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <!-- Balise pour inclure le script pour la compatibilité avec les anciens navigateurs -->
+    <!-- Ce script assure la compatibilité avec les anciennes versions d'Internet Explorer -->
+    <!-- qui ne prennent pas en charge les nouvelles fonctionnalités de HTML et CSS -->
+    <!-- [if lt IE 9] signifie "si la version du navigateur est inférieure à IE9" -->
+    <!-- src="https://cdn.jsdelivr.net/gh/afarkas/html5shiv@3.7.3/dist/html5shiv.min.js" est l'URL du script -->
+    <!-- les balises <script> ne sont pas interprétées dans les anciennes versions d'Internet Explorer -->
+    <!--[if lt IE 9]>
+      <script src="https://cdn.jsdelivr.net/gh/afarkas/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+    <![endif]-->
+    <meta charset="UTF-8" />
+    <!-- Balise META pour définir la description de la page qui apparaîtra dans les résultats de recherche -->
+    <meta name="description" content="Ceci est une description de la page." />
+
+    <!-- Balise META pour définir les mots-clés pour les moteurs de recherche -->
+    <meta name="keywords" content="HTML, META, Balises" />
+
+    <!-- Balise META pour définir l'auteur de la page -->
+    <meta name="author" content="Xavier Affringue" />
+
+    <!-- Balise META pour définir la compatibilité avec les différents navigateurs -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- Balise META pour définir la région de la page -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="rectSvg.css">
+    <!--title: c'est le titre du site dans les recherche google -->
+    <style type="text/css">
+      #gameCanvas {
+        border: 1px solid black;
+      }
+    </style>
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header>
+        <h1>
+          Titre de sur mon site web, balise de titre, sert au referencement
+          naturel.
+        </h1>
+        <!-- <img src="https://scontent.flyn1-1.fna.fbcdn.net/v/t39.30808-6/326032542_929651688223202_347078036166959070_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=bMe6cCNwRaoAX9eh7g0&_nc_ht=scontent.flyn1-1.fna&oh=00_AfBW7j6wALhadrllMRKWZ_4-Hb1JlGlzdKlfSIaTZUmFKw&oe=63E87D10" alt=""> -->
+      </header>
+      <nav class="navbar">
+        <ul>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#accueil">Accueil</a></span>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#jeux">Jeux</a></span>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#imageBlock">Photo</a></span>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#a-propos">À propos</a></span>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#services">Services</a></span>
+              </svg>
+            </div>
+          </li>
+          <li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#contact">Contact</a></span>
+              </svg>
+            </div>
+          </li>
+        </ul>
+      </nav>
+      <main>
+        <div class="sideBarLeft">Je suis la side bar gauche</div>
+        <div class="contenu">
+          <section id="accueil" style="display: none">
+            <h1>Bienvenue sur notre site web</h1>
+            <p>
+              Notre site web vous offre des informations sur nos services et
+              produits.
+            </p>
+            <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
+            <div class="connexionInscription">
+              <h1>Connexion et Inscription</h1>
+              <button onclick="showForm('login')">Connexion</button>
+              <button onclick="showForm('signup')">Inscription</button>
+              <form id="login-form" style="display: none">
+                <h2>Connexion</h2>
+                <label for="login-username">Nom d'utilisateur:</label>
+                <input type="text" id="login-username" /><br /><br />
+                <label for="login-password">Mot de passe:</label>
+                <input type="password" id="login-password" /><br /><br />
+                <input type="button" value="Connexion" onclick="login()" />
+              </form>
+              <form id="signup-form" style="display: none">
+                <h2>Inscription</h2>
+                <label for="signup-username">Nom d'utilisateur:</label>
+                <input type="text" id="signup-username" /><br /><br />
+                <label for="signup-password">Mot de passe:</label>
+                <input type="password" id="signup-password" /><br /><br />
+                <label for="signup-password-confirm"
+                  >Confirmez le mot de passe:</label
+                >
+                <input
+                  type="password"
+                  id="signup-password-confirm"
+                /><br /><br />
+                <input type="button" value="Inscription" onclick="signup()" />
+              </form>
+            </div>
+          </section>
+          <section id="jeux" style="display: none">
+            <h1>ici on jouent au Jeu du serpent</h1>
+            <div id="parentjeux"></div>
+            <script type="text/javascript" src="snake.js"></script>
+            <div class="gamepad">
+              <button class="boutton" id="up-button"></button>
+              <div class="gamepadROW">
+              <button class="boutton" id="left-button"></button>
+              <button class="boutton" id="right-button"></button>
+              </div>
+              <button class="boutton" id="down-button"></button>
+              <button class="boutton" id="launch-button"></button>
+              <button ></button>
+            </div>
+
+            <p>
+              Notre site web vous offre des informations sur nos services et
+              produits. N'hésitez pas à nous contacter pour plus d'informations.
+            </p>
+          </section>
+          <section id="imageBlock" style="display: none">
+            <h1 id="pageTitle"></h1>
+            <p id="pageContent"></p>
+            <div id="card-container"></div>
+            <div class="pagination-Container"></div>
+          </section>
+          <section id="a-propos" style="display: none">
+            <h2>À propos de nous</h2>
+            <p>
+              Nous sommes une entreprise axée sur les services de qualité
+              supérieure pour les clients. Nous nous engageons à fournir un
+              service clientèle exceptionnel et des produits de la plus haute
+              qualité.
+            </p>
+          </section>
+          <section id="services" style="display: none">
+            <h2>Nos services</h2>
+            <ul>
+              <li>Service A</li>
+              <li>Service B</li>
+              <li>Service C</li>
+              <li>Service D</li>
+            </ul>
+            <h1>Intégration de paiement Polygon</h1>
+            <form>
+              <label for="amount">Montant à payer :</label>
+              <input type="text" id="amount" name="amount" required />
+              <button id="payButton">Payer</button>
+            </form>
+          </section>
+          <section id="contact" style="display: none">
+            <h2>Contactez-nous</h2>
+            <div class="formContact">
+              <form action="#">
+                <label for="nom">Nom :</label>
+                <input type="text" id="nom" name="nom" />
+
+                <label for="email">Adresse e-mail :</label>
+                <input type="email" id="email" name="email" />
+
+                <label for="message">Message :</label>
+                <textarea id="message" name="message"></textarea>
+
+                <input type="submit" value="Envoyer" />
+              </form>
+            </div>
+          </section>
+        </div>
+        <div class="sideBarRight">Je suis la side bar droite</div>
+      </main>
+      
+      
+      <footer>
+        <p id="copyright">
+          Copyright &copy;
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+          Fringou BFE
+        </p>
+      </footer>
+    </div>
+    <script src="photo.js"></script>
+    <script src="index.js"></script>
+    <script src="login.js"></script>
+  </body>
+</html>
