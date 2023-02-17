@@ -1,0 +1,146 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background: linear-gradient(
+    130deg,
+    rgba(0, 0, 0, 0.95) 54%,
+    rgba(255, 255, 255, 0.99) 58%,
+    rgba(255, 255, 255, 0.99) 63%,
+    rgba(0, 0, 0, 0.95) 78%
+  );
+}
+header {
+  
+  color: gold;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  border: solid gold 5px;
+  margin: 10px;
+  padding: 10px;
+}
+.navbar {
+ 
+  justify-content: center;
+  margin: 0px 10px 10px 10px;
+  background-color: transparent;
+  border-radius: 10px;
+  padding: 10px;
+  border: solid gold 5px;
+}
+ul {
+  
+  list-style-type: none;
+  padding: 0;
+}
+li {
+  padding: 10px;display: inline-flex;
+}
+main {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  margin: auto 10px;
+  margin-bottom: 10px;
+}
+.sideBarLeft, .sideBarRight {
+  color: gold;
+  border-radius: 10px;
+  padding: 10px;
+    width: 20%;
+  border: solid gold 5px;
+  bottom: 0;
+}
+.sideBarLeft{
+
+  order: 0;
+}
+.contenu {
+  color: gold;
+  width: 60%;
+  order: 1;
+  border-radius: 10px;
+  padding: 10px;
+  background-color: transparent;
+  border: solid gold 5px;
+  margin: 0 10px;
+}
+#imageBlock{
+  color: #222;
+}
+.sideBarRight {
+  order: 2;
+}
+footer {
+  color:gold;
+margin: 10px;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+a {
+  color: gold;
+  text-decoration: none;
+}
+.pagination-Container {
+  color: gold;
+}
+.connexionInscription {
+  padding: 0 30% 0 30%;
+}
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: 5px;
+  padding: 5px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  flex-direction: column;
+}
+#nom,
+#email,
+#message {
+  flex-direction: column;
+  margin: 5px;
+}
+.gamepad {display: flex; align-items: center; justify-content: center; flex-direction: column; border: solid gold 2px;}
+.gamepad .boutton{width: 25px; height: 25px; border-radius: 50%;margin: 0 5px;}
+.gamepad #launch-button{margin: 5px;}
+
+
+/* Media queries pour les écrans de petite taille */
+@media (max-width: 768px) {
+  header {display: none;}
+  body {position: fixed; padding: 0; margin: 0;}
+  .sideBarLeft {display: none; padding: 10px; order: 2; width: 100%; margin: 10px 0;}
+  .contenu { position: relative; padding: 20px; width: 100%; margin: 0;}
+  .sideBarRight {display: none; padding: 10px; order: 2; width: 100%; margin: 10px 0;}
+  footer { color: white; width: 100%; margin: 10px; text-align: center;}
+}
+/* animation: anim-reflet 10s ease-in-out infinite ;
+@keyframes anim-reflet {
+  from{
+transform: translateX(0%);
+
+
+  }
+  to{
+transform: translateX(100%);
+
+  }
+} */

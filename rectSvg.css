@@ -1,0 +1,53 @@
+
+::selection {
+  background: gold;
+}
+.svg-wrapper {
+  position: relative;
+  margin: 5px;
+  width: 80px;
+  height: 30px;
+  align-items: center;
+  justify-content: center;
+}
+.shape1,
+.shape2 {
+  stroke-dasharray: 220;
+  stroke-width: 2px;
+  fill: transparent;
+  stroke: gold;
+  border-bottom: 5px solid black;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+.shape1-shadow,
+.shape2-shadow {
+  stroke-dasharray: 220;
+  stroke-width: 4px;
+  fill: transparent;
+  stroke: rgb(172, 255, 47,0.6);
+  border-bottom: 5px solid black;
+  transition-timing-function: linear;
+  transition: stroke-dashoffset 1s, stroke-dasharray 1s;
+}
+
+.shape1, .shape1-shadow {
+  stroke-dashoffset: 220;
+}
+.shape2,.shape2-shadow {
+  stroke-dashoffset: -220;
+}
+.text {
+  font-family: 'Roboto Condensed';
+  /* font-size: 22px; */
+  top: -90%;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.svg-wrapper:hover .shape1,
+.svg-wrapper:hover .shape2,.svg-wrapper:hover .shape1-shadow,
+.svg-wrapper:hover .shape2-shadow {
+  stroke-dashoffset: 0;
+  stroke-dasharray: 220;
+}
