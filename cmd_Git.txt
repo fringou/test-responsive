@@ -1,7 +1,29 @@
-git init:   Permet d'initialiser un nouveau dépôt Git dans un répertoire existant.
-git clone:  Permet de cloner un dépôt Git existant. Par exemple, git clone url_du_depot pour cloner un dépôt à partir de son URL.
-git add:    Permet d'ajouter des fichiers à l'index de Git. Par exemple, git add nom_du_fichier pour ajouter un fichier nommé "nom_du_fichier" à l'index.
-git commit: Permet de créer un commit, qui enregistre les modifications apportées aux fichiers dans le dépôt Git. Par exemple, git commit -m "Message de commit" pour créer un nouveau commit avec le message "Message de commit".
-git push:   Permet de pousser les commits vers le dépôt Git distant. Par exemple, git push origin nom_de_la_branche pour pousser les commits de la branche nommée "nom_de_la_branche" vers le dépôt distant.
-git pull:   Permet de récupérer les dernières modifications du dépôt Git distant. Par exemple, git pull origin nom_de_la_branche pour récupérer les derniers commits de la branche nommée "nom_de_la_branche" à partir du dépôt distant.
-git status: Permet d'afficher l'état actuel des fichiers dans le dépôt Git.
+git init:   
+    Permet d'initialiser un nouveau dépôt Git dans un répertoire existant.
+
+git clone + URL:  
+    Permet de cloner un dépôt Git existant. Par exemple, git clone url_du_depot pour cloner un dépôt à partir de son URL.
+
+git add:    
+    Permet d'ajouter des fichiers à l'index de Git. Par exemple, git add nom_du_fichier pour ajouter un fichier nommé "nom_du_fichier" à l'index.
+
+git commit -m "commentaire": 
+    Permet de créer un commit, qui enregistre les modifications apportées aux fichiers dans le dépôt Git. 
+    Par exemple, git commit -m "Message de commit" pour créer un nouveau commit avec le message "Message de commit".
+
+git push:   
+    Permet de pousser les commits vers le dépôt Git distant. 
+    Par exemple, git push origin nom_de_la_branche pour pousser les commits de la branche nommée "nom_de_la_branche" vers le dépôt distant.
+
+git pull origin + nom_de_la_branche:  
+    Permet de récupérer les dernières modifications du dépôt Git distant. 
+    Par exemple, git pull origin nom_de_la_branche pour récupérer les derniers commits de la branche nommée "nom_de_la_branche" à partir du dépôt distant.
+
+git status: 
+    Permet d'afficher l'état actuel des fichiers dans le dépôt Git.
+
+git branch + nom_de_la_branche: 
+    Permet de créer une nouvelle branche de modifications.
+
+git checkout + nom_de_la_branche: 
+    Permet de selectionner la branche.
