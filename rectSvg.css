@@ -1,7 +1,4 @@
 
-::selection {
-  background: gold;
-}
 .svg-wrapper {
   position: relative;
   margin: 5px;
@@ -50,4 +47,5 @@
 .svg-wrapper:hover .shape2-shadow {
   stroke-dashoffset: 0;
   stroke-dasharray: 220;
+ 
 }

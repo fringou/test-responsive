@@ -1,5 +1,5 @@
-// Définissez les données pour les vignettes
-const cardsData = [
+// Définir les données pour les vignettes
+let cardsData = [
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 1",
@@ -8,22 +8,22 @@ const cardsData = [
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 2",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 3",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 4",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
   },
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 5",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
   },
   {
     image: "https://via.placeholder.com/150",
@@ -33,13 +33,23 @@ const cardsData = [
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 7",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
   },
   {
     image: "https://via.placeholder.com/150",
     title: "Titre 8",
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
   },
+  {
+    image: "https://via.placeholder.com/150",
+    title: "Titre 9",
+    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+  },
+  {
+    image: "https://via.placeholder.com/150",
+    title: "Titre 10",
+    text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  }
 ];
 
 const itemsParPage = 4;
@@ -115,6 +125,5 @@ paginationContainer.appendChild(lienPage);
 
 updateCardsData();
 creerPagination();
-
 
 

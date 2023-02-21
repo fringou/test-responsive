@@ -29,12 +29,22 @@
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="navbar/navbar.css" />
     <link rel="stylesheet" href="rectSvg.css">
+    <link rel="stylesheet" href="imageUpload.css">
+    <link rel="stylesheet" href="tableau.css">
+    
     <!--title: c'est le titre du site dans les recherche google -->
     <style type="text/css">
       #gameCanvas {
         border: 1px solid black;
       }
     </style>
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+      />
     <title>Document</title>
   </head>
 
@@ -52,7 +62,7 @@
           <li>
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape1 shape1-shadow" height="30" width="80" rx="10" />
                 <rect class="shape2" height="30" width="80" rx="10"/>
                 <span class="text"><a href="#accueil">Accueil</a></span>
               </svg>
@@ -64,6 +74,14 @@
                 <rect class="shape1" height="30" width="80" rx="10" />
                 <rect class="shape2" height="30" width="80" rx="10"/>
                 <span class="text"><a href="#jeux">Jeux</a></span>
+              </svg>
+            </div>
+          </li><li>
+            <div class="svg-wrapper">
+              <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
+                <rect class="shape1" height="30" width="80" rx="10" />
+                <rect class="shape2" height="30" width="80" rx="10"/>
+                <span class="text"><a href="#tableau">Tableau</a></span>
               </svg>
             </div>
           </li>
@@ -117,8 +135,8 @@
             <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
             <div class="connexionInscription">
               <h1>Connexion et Inscription</h1>
-              <button onclick="showForm('login')">Connexion</button>
-              <button onclick="showForm('signup')">Inscription</button>
+              <button id="login-button" onclick="showForm('login')">Connexion</button>
+              <button id="signup-button" onclick="showForm('signup')">Inscription</button>
               <form id="login-form" style="display: none">
                 <h2>Connexion</h2>
                 <label for="login-username">Nom d'utilisateur:</label>
@@ -133,13 +151,8 @@
                 <input type="text" id="signup-username" /><br /><br />
                 <label for="signup-password">Mot de passe:</label>
                 <input type="password" id="signup-password" /><br /><br />
-                <label for="signup-password-confirm"
-                  >Confirmez le mot de passe:</label
-                >
-                <input
-                  type="password"
-                  id="signup-password-confirm"
-                /><br /><br />
+                <label for="signup-password-confirm">Confirmez le mot de passe:</label>
+                <input type="password" id="signup-password-confirm"/><br /><br />
                 <input type="button" value="Inscription" onclick="signup()" />
               </form>
             </div>
@@ -163,6 +176,12 @@
               Notre site web vous offre des informations sur nos services et
               produits. N'hésitez pas à nous contacter pour plus d'informations.
             </p>
+          </section>
+          <section id="tableau" style="display: none">
+            <h1>Tableau</h1>
+            <table id="lastprice">          
+            </table>
+            <p></p>
           </section>
           <section id="imageBlock" style="display: none">
             <h1 id="pageTitle"></h1>
@@ -229,5 +248,7 @@
     <script src="photo.js"></script>
     <script src="index.js"></script>
     <script src="login.js"></script>
+    <script src="imageUpload.js"></script>
+    <script src="navbar/navbar.js"></script>
   </body>
 </html>

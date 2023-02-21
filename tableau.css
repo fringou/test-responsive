@@ -1,0 +1,17 @@
+
+table{
+
+/* collapse :permet d'enlever l'espacement entre les cellules */
+    border-collapse: collapse; 
+    margin: 0 auto;
+ 
+}
+tbody{
+    text-align: center;align-items: center;
+}
+td{
+    min-width: 100px;
+    max-width: 100px;
+    border: 1px solid gold;
+    padding: 5px;
+}

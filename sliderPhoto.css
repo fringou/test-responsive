@@ -1,0 +1,84 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.slider-1 {
+  max-width: 600px;
+  height: 200px;
+  margin: 100px auto;
+  overflow: hidden;
+  border: 1px white solid;
+}
+.slider-1 .slider {
+  /* horizontal */
+
+  height: 100%;
+
+  /*  display: flex;
+   row de gauche a droite (valeur neg pour translateX)
+ et row-reverse de droite a gauche (valeur neg pour translateX)
+  flex-direction: row; */
+
+  animation: slider-1 10s infinite ease-in-out;
+}
+.slider-1 p {
+  background: yellowgreen;
+  flex-shrink: 0;
+  padding: 72px 0;
+  width: 100%;
+  text-align: center;
+  font-size: 45px;
+  color: black;
+}
+@keyframes slider-1 {
+  0%,
+  20% {
+    transform: translateY(0);
+  }
+  25%,
+  45% {
+    transform: translateY(-100%);
+  }
+  50%,
+  70% {
+    transform: translateY(-200%);
+  }
+  75%,
+  95% {
+    transform: translateY(-300%);
+  }
+  100% {
+    transform: translateY(-400%);
+  }
+}
+.container {
+  position: relative;
+  background-size: cover;
+  color: #fff;
+  background-position: center;
+  max-width: 450px;
+  height: 100vh;
+  margin: auto;
+}
+#prevText {
+  position: absolute;
+  width: 100%;
+}
+#textBox{
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  border:#fff solid 2px;
+  outline: none;
+  background: transparent;
+  color: #fff;
+  padding: 5px;
+}
