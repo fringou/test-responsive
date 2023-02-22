@@ -29,7 +29,7 @@
     <link rel="stylesheet" href="index.css"/>
     <link rel="stylesheet" href="navbar/navbar.css"/>
     <link rel="stylesheet" href="navbar/anim_rect_lien.css">
-    <link rel="stylesheet" href="imageUpload.css">
+    <link rel="stylesheet" href="galerie_photo/photo.css">
     <link rel="stylesheet" href="tableau.css">
     
     <!--title: c'est le titre du site dans les recherche google -->
@@ -182,12 +182,39 @@
             </table>
             <p></p>
           </section>
-          <section id="imageBlock" style="display: none">
+          <section id="imageBlock" class="imageBlock" style="display: none">
             <h1 id="pageTitle"></h1>
             <p id="pageContent"></p>
             <div id="card-container"></div>
             <div class="pagination-Container"></div>
-          </section>
+         
+      
+          <form id="cardForm" class="cardForm">
+            <fieldset id="container-img" class="container-img">
+              <div id="imgBox" class="imgBox"></div>
+              <button>
+                <input
+                  type="file"
+                  id="file"
+                  accept="image/*"
+                  style="display: none"
+                  onchange="loadFile(event)"
+                />
+                <label for="file"
+                  ><i class="fa-solid fa-image" id="upload-icon"></i> Ajouter une
+                  photo</label
+                >
+              </button>
+            </fieldset>
+            <fieldset id="form" class="form" style="display: none">
+              <label for="titreBox"></label>
+              <input id="titreBox" placeholder="Titre" />
+              <label for="textBox"></label>
+              <textarea id="textBox" placeholder="commentaire"></textarea>
+              <button type="submit">Ajouter une carte</button>
+            </fieldset>
+          </form>
+        </section>
           <section id="a-propos" style="display: none">
             <h2>À propos de nous</h2>
             <p>
@@ -237,9 +264,7 @@
       <footer>
         <p id="copyright">
           Copyright &copy;
-          <script>
-            document.write(new Date().getFullYear());
-          </script>
+          <script>document.write(new Date().getFullYear());</script>
           Fringou BFE
         </p>
       </footer>

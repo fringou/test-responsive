@@ -23,7 +23,6 @@ body {
   background: linear-gradient(to right, #000000, #434343); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 header {
-  
   color: gold;
   text-align: center;
   background-color: transparent;
@@ -32,9 +31,6 @@ header {
   margin: 10px;
   padding: 10px;
 }
-
-
-
 main {
   display: flex;
   flex-direction: row;
@@ -75,7 +71,7 @@ h2{
 }
 footer {
   color:gold;
-margin: 10px;
+  margin: 10px;
   text-align: center;
   align-items: center;
   justify-content: center;
