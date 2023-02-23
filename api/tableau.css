@@ -15,3 +15,7 @@ td{
     border: 1px solid gold;
     padding: 5px;
 }
+th.tableauu{
+    border: 1px solid #fff;
+    margin: 2px;
+}

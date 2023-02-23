@@ -26,25 +26,25 @@
     <!-- Balise META pour définir la région de la page -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="index.css"/>
-    <link rel="stylesheet" href="navbar/navbar.css"/>
-    <link rel="stylesheet" href="navbar/anim_rect_lien.css">
-    <link rel="stylesheet" href="galerie_photo/photo.css">
-    <link rel="stylesheet" href="tableau.css">
-    
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="navbar/navbar.css" />
+    <link rel="stylesheet" href="navbar/anim_rect_lien.css" />
+    <link rel="stylesheet" href="galerie_photo/photo.css" />
+    <link rel="stylesheet" href="api/tableau.css" />
+
     <!--title: c'est le titre du site dans les recherche google -->
     <style type="text/css">
       #gameCanvas {
         border: 1px solid black;
       }
     </style>
-        <link
-        rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <title>Document</title>
   </head>
 
@@ -61,8 +61,13 @@
           <li>
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
-                <rect class="shape1 shape1-shadow" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect
+                  class="shape1 shape1-shadow"
+                  height="30"
+                  width="80"
+                  rx="10"
+                />
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#accueil">Accueil</a></span>
               </svg>
             </div>
@@ -71,15 +76,16 @@
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#jeux">Jeux</a></span>
               </svg>
             </div>
-          </li><li>
+          </li>
+          <li>
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#tableau">Tableau</a></span>
               </svg>
             </div>
@@ -88,7 +94,7 @@
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#imageBlock">Photo</a></span>
               </svg>
             </div>
@@ -97,7 +103,7 @@
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#a-propos">À propos</a></span>
               </svg>
             </div>
@@ -106,7 +112,7 @@
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#services">Services</a></span>
               </svg>
             </div>
@@ -115,7 +121,7 @@
             <div class="svg-wrapper">
               <svg height="30" width="80" xmlns="http://www.w3.org/2000/svg">
                 <rect class="shape1" height="30" width="80" rx="10" />
-                <rect class="shape2" height="30" width="80" rx="10"/>
+                <rect class="shape2" height="30" width="80" rx="10" />
                 <span class="text"><a href="#contact">Contact</a></span>
               </svg>
             </div>
@@ -134,8 +140,12 @@
             <p>N'hésitez pas à nous contacter pour plus d'informations.</p>
             <div class="connexionInscription">
               <h1>Connexion et Inscription</h1>
-              <button id="login-button" onclick="showForm('login')">Connexion</button>
-              <button id="signup-button" onclick="showForm('signup')">Inscription</button>
+              <button id="login-button" onclick="showForm('login')">
+                Connexion
+              </button>
+              <button id="signup-button" onclick="showForm('signup')">
+                Inscription
+              </button>
               <form id="login-form" style="display: none">
                 <h2>Connexion</h2>
                 <label for="login-username">Nom d'utilisateur:</label>
@@ -150,8 +160,13 @@
                 <input type="text" id="signup-username" /><br /><br />
                 <label for="signup-password">Mot de passe:</label>
                 <input type="password" id="signup-password" /><br /><br />
-                <label for="signup-password-confirm">Confirmez le mot de passe:</label>
-                <input type="password" id="signup-password-confirm"/><br /><br />
+                <label for="signup-password-confirm"
+                  >Confirmez le mot de passe:</label
+                >
+                <input
+                  type="password"
+                  id="signup-password-confirm"
+                /><br /><br />
                 <input type="button" value="Inscription" onclick="signup()" />
               </form>
             </div>
@@ -163,12 +178,12 @@
             <div class="gamepad">
               <button class="boutton" id="up-button"></button>
               <div class="gamepadROW">
-              <button class="boutton" id="left-button"></button>
-              <button class="boutton" id="right-button"></button>
+                <button class="boutton" id="left-button"></button>
+                <button class="boutton" id="right-button"></button>
               </div>
               <button class="boutton" id="down-button"></button>
               <button class="boutton" id="launch-button"></button>
-              <button ></button>
+              <button></button>
             </div>
 
             <p>
@@ -178,7 +193,27 @@
           </section>
           <section id="tableau" style="display: none">
             <h1>Tableau</h1>
-            <table id="lastprice">          
+            <table id="lastprice"></table>
+            <table id="tableauBEP20">
+              <tr>
+                <th id="dates" class="tableauu">dates</th>
+                <th id="de" class="tableauu">de</th>
+                <th id="a" class="tableauu">a</th>
+                <th id="valeurBNB" class="tableauu">valeurBNB</th>
+                <th id="fee" class="tableauu">fee</th>
+                <th id="feeEUR" class="tableauu">feeEUR</th>
+                <th id="token_name" class="tableauu">token_name</th>
+                <th id="token_symbol" class="tableauu">token_symbol</th>
+                <th id="token_symbol2" class="tableauu">token_symbol2</th>
+                <th id="op" class="tableauu">op</th>
+                <th id="changeeur" class="tableauu">changeeur</th>
+                <th id="valeurEUR" class="tableauu">valeurEUR</th>
+                <th id="block" class="tableauu">block</th>
+                <th id="contractadressbep20" class="tableauu">contractadressbep20</th>
+                <th id="hashtx" class="tableauu">hashtx</th>
+                <th id="transactionIndex" class="tableauu">transactionIndex</th>
+                <th id="typecompte" class="tableauu">typecompte</th>
+              </tr>
             </table>
             <p></p>
           </section>
@@ -187,34 +222,33 @@
             <p id="pageContent"></p>
             <div id="card-container"></div>
             <div class="pagination-Container"></div>
-         
-      
-          <form id="cardForm" class="cardForm">
-            <fieldset id="container-img" class="container-img">
-              <div id="imgBox" class="imgBox"></div>
-              <button>
-                <input
-                  type="file"
-                  id="file"
-                  accept="image/*"
-                  style="display: none"
-                  onchange="loadFile(event)"
-                />
-                <label for="file"
-                  ><i class="fa-solid fa-image" id="upload-icon"></i> Ajouter une
-                  photo</label
-                >
-              </button>
-            </fieldset>
-            <fieldset id="form" class="form" style="display: none">
-              <label for="titreBox"></label>
-              <input id="titreBox" placeholder="Titre" />
-              <label for="textBox"></label>
-              <textarea id="textBox" placeholder="commentaire"></textarea>
-              <button type="submit">Ajouter une carte</button>
-            </fieldset>
-          </form>
-        </section>
+
+            <form id="cardForm" class="cardForm">
+              <fieldset id="container-img" class="container-img">
+                <div id="imgBox" class="imgBox"></div>
+                <button>
+                  <input
+                    type="file"
+                    id="file"
+                    accept="image/*"
+                    style="display: none"
+                    onchange="loadFile(event)"
+                  />
+                  <label for="file"
+                    ><i class="fa-solid fa-image" id="upload-icon"></i> Ajouter
+                    une photo</label
+                  >
+                </button>
+              </fieldset>
+              <fieldset id="form" class="form" style="display: none">
+                <label for="titreBox"></label>
+                <input id="titreBox" placeholder="Titre" />
+                <label for="textBox"></label>
+                <textarea id="textBox" placeholder="commentaire"></textarea>
+                <button type="submit">Ajouter une carte</button>
+              </fieldset>
+            </form>
+          </section>
           <section id="a-propos" style="display: none">
             <h2>À propos de nous</h2>
             <p>
@@ -259,12 +293,13 @@
         </div>
         <div class="sideBarRight">Je suis la side bar droite</div>
       </main>
-      
-      
+
       <footer>
         <p id="copyright">
           Copyright &copy;
-          <script>document.write(new Date().getFullYear());</script>
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
           Fringou BFE
         </p>
       </footer>
@@ -272,7 +307,6 @@
     <script src="photo.js"></script>
     <script src="index.js"></script>
     <script src="login.js"></script>
-    <script src="imageUpload.js"></script>
     <script src="navbar/navbar.js"></script>
   </body>
 </html>
