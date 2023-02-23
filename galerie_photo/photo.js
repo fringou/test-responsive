@@ -43,7 +43,8 @@ cardForm.addEventListener("submit", (event) => {
     text: textInput.value,
   };
 
-  cardContainer.style.display ="block"
+  cardContainer.style.display ="inline-flex";
+  cardContainer.style.flexWrap = "wrap";
   cardsData.push(newCard);
   updateCardsData();
   creerPagination();

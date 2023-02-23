@@ -113,7 +113,7 @@ function _BEP20(){
     //   SpreadsheetApp.getActiveSpreadsheet().getSheetByName('bep20').getRange(j,16).setValue(transactionIndex);
     //   SpreadsheetApp.getActiveSpreadsheet().getSheetByName('bep20').getRange(j,17).setValue(typecompte);
     
-    tbep20.
+
   
     j++;}
     var sheet = SpreadsheetApp.getActive().getSheetByName('bep20');

@@ -7,6 +7,10 @@
   width: 100%;
   height: 100%;
 }
+#card-container{
+  display: inline-flex;
+  flex-wrap: wrap;
+}
 .cardForm, .container-img, .form {
   display: flex;
   flex-direction: column;
